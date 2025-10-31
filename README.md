@@ -9,6 +9,10 @@ It enables natural language querying over structured data, ensuring **accuracy, 
 
 Project Samarth with two interactive : 1. Visual Representation 2 . Chatbot
 ---
+1. Visual Representation
+
+This interactive Analytical Insights Dashboard is designed to enable comparative analysis of climate and agricultural trends across India with ease and precision. The visual layout draws inspiration from official Government of India project dashboards, ensuring clarity, accessibility, and high information density.
+
 To begin your exploration, use the following controls:
 
 Select State(s) to Compare:
