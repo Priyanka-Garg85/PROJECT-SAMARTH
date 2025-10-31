@@ -7,18 +7,23 @@ It enables natural language querying over structured data, ensuring **accuracy, 
 
 ## 🚀 Overview
 
-Project Samarth bridges **large language models (LLMs)** and **structured agricultural data**.  
-When a user asks a question (e.g., *“Compare rice yield in Maharashtra between 2000 and 2010”*), the system dynamically:
+Project Samarth with two interactive : 1. Visual Representation 2 . Chatbot
+---
+1. Visual Representation
+This interactive Analytical Insights Dashboard is designed to facilitate comparative analysis of climate and agricultural trends across India for easeness. The visualizations are inspired by official government project dashboards, ensuring clarity, accessibility, and high information density. To begin your exploration, utilize the controls below:
 
-1. **Interprets** the question using Groq’s **Llama-3.1-8B-Instant** model.  
-2. **Generates and executes SQL queries** against a local SQLite database (`database.db`).  
-3. **Returns traceable, structured results** containing:
-   - 📘 **Citation:** Source dataset  
-   - 💡 **Answer:** Concise interpretation  
-   - 📊 **Data Used:** Raw SQL output rows  
+Select State(s) to Compare: Choose one or more States/Union Territories to instantly benchmark and compare their climate and production metrics side-by-side.
+Year Range Selection: Specify the temporal scope of your analysis. Note the distinct data availability periods: Rainfall data spans 1901–2015, and Crop data is available for 2009–2015.
+Mode of Data: Select the required analytical output: Rainfall (time-series), Crop totals (aggregated production), Top crops (principal production list), or Rainfall vs Crop correlation (statistical analysis).
+Click Generate after setting your parameters to view the corresponding time-series charts, production metrics, or statistical findings.
+---
+---
+2 . Chatbot
+## 🧪 Example Query
 
-This design guarantees transparency and reproducibility — every answer is grounded in real data.
-
+> **Q:** *"What was the total area under Rice cultivation in Maharashtra in 2010, and how did its yield compare to 2000?"*  
+>  
+> ✅ **A:** The system dynamically compiles an SQL query, executes it locally, and returns structured, traceable results showing both years’ area and yield side-by-side.
 ---
 
 ## 🧩 System Architecture
@@ -61,20 +66,9 @@ The architecture prioritizes **speed**, **data integrity**, and **privacy** — 
 
 Both datasets were cleaned, normalized, and merged into a unified **SQLite database (`database.db`)** for seamless querying.
 
----
-
-## 🧪 Example Query
-
-> **Q:** *"What was the total area under Rice cultivation in Maharashtra in 2010, and how did its yield compare to 2000?"*  
->  
-> ✅ **A:** The system dynamically compiles an SQL query, executes it locally, and returns structured, traceable results showing both years’ area and yield side-by-side.
-
----
-
 ## 🔒 Key Highlights
 
 - **Traceable Outputs:** Each answer includes raw SQL data.  
-- **Zero Hallucination:** The LLM only interprets — all numbers come directly from the database.  
 - **Secure by Design:** No cloud-based data storage or external APIs for sensitive data.  
 - **High Speed:** Powered by **Groq’s low-latency inference** for real-time interactivity.  
 
@@ -100,7 +94,7 @@ Both datasets were cleaned, normalized, and merged into a unified **SQLite datab
    pip install -r requirements.txt
    ```
 
-4. **Add your Groq API key:**
+4. **Add your Groq API key with a separate file name .env only for API key :**
    ```bash
    export GROQ_API_KEY=your_api_key_here
    ```
@@ -110,7 +104,7 @@ Both datasets were cleaned, normalized, and merged into a unified **SQLite datab
    streamlit run app.py
    ```
 
-Your local chatbot will now be live at **http://localhost:8501** 🎉
+Your local chatbot will now be live at localhost
 
 ---
 
@@ -119,16 +113,5 @@ Your local chatbot will now be live at **http://localhost:8501** 🎉
 - Integration of additional datasets (soil health, irrigation patterns)  
 - Advanced multi-hop querying across datasets  
 - Support for Hindi and regional language input  
-- Richer visualizations with Altair / Plotly  
 
 ---
-
-### 📜 License
-
-This project is released under the **MIT License**.  
-Feel free to use, modify, and build upon it with attribution.
-
----
-
-**Author:** Priyanka Agg  
-**Project:** Project Samarth — *Data-Driven Agricultural Q&A System*
