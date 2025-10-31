@@ -100,8 +100,8 @@ Both datasets were cleaned, normalized, and merged into a unified **SQLite datab
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/PROJECT-Samarth.git
-   cd PROJECT-Samarth
+   git clone https://github.com/your-username/PROJECT-SAMARTH.git
+   cd PROJECT-SAMARTH
    ```
 
 2. **Create and activate a virtual environment:**
