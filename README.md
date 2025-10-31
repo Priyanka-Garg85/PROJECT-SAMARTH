@@ -9,14 +9,32 @@ It enables natural language querying over structured data, ensuring **accuracy, 
 
 Project Samarth with two interactive : 1. Visual Representation 2 . Chatbot
 ---
-1. Visual Representation
-This interactive Analytical Insights Dashboard is designed to facilitate comparative analysis of climate and agricultural trends across India for easeness. The visualizations are inspired by official government project dashboards, ensuring clarity, accessibility, and high information density. To begin your exploration, utilize the controls below:
+To begin your exploration, use the following controls:
 
-Select State(s) to Compare: Choose one or more States/Union Territories to instantly benchmark and compare their climate and production metrics side-by-side.
-Year Range Selection: Specify the temporal scope of your analysis. Note the distinct data availability periods: Rainfall data spans 1901–2015, and Crop data is available for 2009–2015.
-Mode of Data: Select the required analytical output: Rainfall (time-series), Crop totals (aggregated production), Top crops (principal production list), or Rainfall vs Crop correlation (statistical analysis).
-Click Generate after setting your parameters to view the corresponding time-series charts, production metrics, or statistical findings.
----
+Select State(s) to Compare:
+Choose one or more States or Union Territories to benchmark and compare their climate and agricultural production metrics side-by-side.
+
+Year Range Selection:
+Define the temporal range for your analysis.
+Note:
+
+Rainfall data is available from 1901–2015
+
+Crop production data spans 2009–2015
+
+Mode of Data:
+Select the desired analytical dimension:
+
+Rainfall (Time-Series) – visualize historical rainfall patterns
+
+Crop Totals (Aggregated Production) – analyze total production volumes
+
+Top Crops (Principal Production List) – identify dominant crops per region
+
+Rainfall vs Crop Correlation (Statistical Analysis) – explore the relationship between rainfall and crop yields
+
+Once parameters are set, click Generate to view the corresponding time-series charts, aggregated production metrics, or correlation analyses.
+
 ---
 2 . Chatbot
 ## 🧪 Example Query
@@ -78,8 +96,8 @@ Both datasets were cleaned, normalized, and merged into a unified **SQLite datab
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/project-samarth.git
-   cd project-samarth
+   git clone https://github.com/your-username/PROJECT-Samarth.git
+   cd PROJECT-Samarth
    ```
 
 2. **Create and activate a virtual environment:**
